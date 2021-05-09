@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% with form=signin_form %}
+        {% include 'auto_form.html' %}
+    {% endwith %}
+
+{% endblock %}

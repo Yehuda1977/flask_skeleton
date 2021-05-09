@@ -1,0 +1,24 @@
+{# Create an automatic form out of a FlaskForm object #}
+{% if additional_params is not defined %}
+    {% set additional_params={} %}
+{% endif %}
+
+<form action=""
+      method="POST"
+      {% for name, value in additional_params.items() %} {{ name }}="{{ value }}" {% endfor %}
+    >
+
+    {{ form.hidden_tag() }}
+
+    {% for field_name, field in get_form_fields(form) %}
+    {% if field_name != 'submit' %}
+        <p>
+            {{ field.label }}
+            {{ field() }}
+        </p>
+    {% endif %}
+    {% endfor %}
+
+    {{ form.submit() }}
+
+</form>

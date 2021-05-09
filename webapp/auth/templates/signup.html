@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% with additional_params={"enctype":"multipart/form-data"} %}
+        {% include 'auto_form.html' %}
+    {% endwith %}
+
+{% endblock %}
