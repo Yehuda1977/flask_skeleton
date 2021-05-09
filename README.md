@@ -1,12 +1,14 @@
 For DEV
 1. git clone https://github.com/Yehuda1977/flask_skeleton <NEW_DIRECTORY_NAME>
-2. pip3 install -r requirements.txt
-3. export set SECRET_KEY="whatever_you_want"
-4. export set FLASK_ENV="dev"
-5. export set MAIL_PASSWORD="whateveryourmailpasswordis"   #best to user google application password
-6. flask db init
-7. flask db migrate
-8. flask db upgrade
+2. Make sure that after you clone the repository you change your remote origin using the following command:
+    git remote set-url origin <NAME_OF_YOUR_GIT_REPOSITORY>
+3. pip3 install -r requirements.txt
+4. export set SECRET_KEY="whatever_you_want"
+5. export set FLASK_ENV="dev"
+6. export set MAIL_PASSWORD="whateveryourmailpasswordis"   #best to user google application password
+7. flask db init
+8. flask db migrate
+9. flask db upgrade
 
 
 For PRODUCTION
