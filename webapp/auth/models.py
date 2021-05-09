@@ -38,7 +38,6 @@ class User(db.Model, flask_login.UserMixin, ModelMixin): # db.Model is required 
     set_password(pwd):
         Hash the password and set it as this user's password
     """
-
     name = db.Column(db.String(64))
     password = db.Column(db.String(64)) # TODO: name it password_hash
     mail = db.Column(db.String(254), nullable=True)
