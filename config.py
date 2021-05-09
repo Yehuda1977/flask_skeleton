@@ -27,8 +27,8 @@ class DevConfig(Config):
     MAIL_USE_TLS = True
     MAIL_USE_SSL = False
 
-    MAIL_USERNAME       = 'yehuda1977@gmail.com'
-    MAIL_DEFAULT_SENDER = 'yehuda1977@gmail.com'
+    MAIL_USERNAME       = 'email@gmail.com'
+    MAIL_DEFAULT_SENDER = 'email@gmail.com'
 
     # Somewhere you need to do (probably in ~/.bash_profile):
     # export MAIL_PASSWORD="mypassword"
@@ -49,8 +49,8 @@ class ProdConfig(Config):
     MAIL_USE_TLS = True
     MAIL_USE_SSL = False
 
-    MAIL_USERNAME       = 'yehuda1977@gmail.com'
-    MAIL_DEFAULT_SENDER = 'yehuda1977@gmail.com'
+    MAIL_USERNAME       = 'email@gmail.com'
+    MAIL_DEFAULT_SENDER = 'email@gmail.com'
 
 
 
