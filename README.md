@@ -17,7 +17,7 @@ For PRODUCTION
 3. heroku addons:create heroku-postgresql:hobby-dev --app <app_name>
 4. heroku run flask db upgrade --app <app_name>
 5. heroku config:set SECRET_KEY="whatever_you_want"
-6. heroku config:set FLASK_ENV="dev"
+6. heroku config:set FLASK_ENV="prod"
 7. git add .
 8. git commit -m "deploy"
 9. git push heroku master
