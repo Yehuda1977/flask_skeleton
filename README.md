@@ -13,6 +13,7 @@ For DEV
 4. export set SECRET_KEY="whatever_you_want"
 5. export set FLASK_ENV="dev"
 6. export set MAIL_PASSWORD="whateveryourmailpasswordis"   #best to use google application password
+    Check your setting with printenv
 7. flask db init
 8. flask db migrate
 9. flask db upgrade
