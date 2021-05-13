@@ -1,3 +1,7 @@
+Start by creating a virtual environment.
+1. virtualenv <name_of_my_environment>
+2. source <name_of_my_environment>/bin/activate
+
 For DEV
 1. git clone https://github.com/Yehuda1977/flask_skeleton <NEW_DIRECTORY_NAME>
 2. Make sure that after you clone the repository you change your remote origin using the following command:
